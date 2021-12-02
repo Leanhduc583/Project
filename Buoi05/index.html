@@ -8,8 +8,48 @@
     <title>To-do list</title>
 </head>
 <body>
-    
-    
+    <div class="container">
+        <!-- Title todo-list -->
+        <h1>Todo List</h1>
+  
+        <!-- Add item -->
+        <div class="container__add-task">
+          <div class="add-task">
+            <label>Task</label>
+            <input id="task" type="text" placeholder="Task..." />
+          </div>
+          <div class="add-description">
+            <label>Description</label>
+            <textarea id="description" placeholder="Description..."></textarea>
+            <button>Add Item</button>
+          </div>
+        </div>
+  
+        <!-- Read item -->
+        <div class="container__read-task">
+          <!-- header -->
+          <div class="read-task-header">
+            <h3 class="header-number">S.no</h3>
+            <h3 class="header-task">Task</h3>
+            <h3 class="header-description">Description</h3>
+            <h3 class="header-action">Action</h3>
+          </div>
+  
+          <!-- Detail task -->
+          <div class="read-task">
+            <h3 class="read-task-number">1</h3>
+            <p class="read-task-name">Làm crud cùng lớp jsa06</p>
+            <p class="read-task-description">
+              Thực hành cùng các bạn trong lớp jsa06 làm một ứng dụng crud
+            </p>
+            <div class="read-task-action">
+              <button>Delete</button>
+              <button>Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src="main.js"></script>
 </body>
 </html>

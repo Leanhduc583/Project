@@ -2,6 +2,84 @@
 *{
     box-sizing: border-box;
     font-family: poppins;
+}
+body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.container__add-task{
+    margin: 20px 100px 0 100px;
+    width: 90%;
+}
+label{
+    display: block;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 40px;
+}
+textarea{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+}
+.container__add-task button{
+    width: 150px;
+    height: 50px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+
+.container__read-task{
+    margin: 20px 100px 0 100px;
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    border-top: solid 1px black;
+}
+.read-task-header{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    width: 25%;
+}
+.read-task{
+    display: flex;
+    border-top: solid 1px black;
+}
+p{
+    width: 25%;
+    padding-right: 60px;
+}
+.container__read-task button{
+    margin-top: 20px;
+    width: 100px;
+    height: 33px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }

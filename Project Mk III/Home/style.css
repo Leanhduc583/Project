@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box; 
+    /* font-family: Poppins; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Poppins;
+    position: relative
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+#head{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: #332B25;
+    opacity: 0.9;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+}
+
+.logo{
+    height: 34px;
+    width: 101px;
+    margin-top: 20%;
+    margin-left: 300%;
+    cursor: pointer;
+}
+.header-menu{
+    width: 65%;
+}
+.header-menu-wrap{
+    margin-top: 24px;
+    margin-left: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: large;
+}
+.header-menu-item{
+    position: relative;
+    transition: all .3s ease;
+}
+.header-menu-item:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.header-menu-item:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.header-menu-item:hover::after{
+    width: 100%;
+    transition: all .3s ease;
+    left: 0;
+}
+.menu-reservation{
+    width: 200px;
+    height: 50px;
+}
+button.reservation{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 70%;
+    margin-top: 11px;
+    margin-left: 30px;
+    background-color: inherit;
+    color: white;
+    font-size: large;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-family: Poppins;
+}
+button.reservation:hover{
+    background-color: #cfa670;
+    border: 2px solid #cfa670;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+#intro{
+    overflow: hidden;
+    background: url(./Sauce/img/background2.jpg) fixed;
+}
+.intro-text{
+    margin: 15% 15%;
+    color: white;
+}
+p{
+    margin: 0;
+}
+.intro-title{
+    font-size: 50px;
+    color: #cfa670;
+    font-family: 'Dancing Script', cursive;
+}
+.intro-name-1{
+    font-size: 70px;
+    margin-top: -25px;
+    margin-bottom: -20px;
+}
+.intro-name-2{
+    font-size: 70px;
+    margin-top: -40px;
+}
+.intro-desc{
+    font-size: 25px;
+}
+
+
+
+
+
+
+#story{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 150px;
+    text-align: center;
+    background: linear-gradient(#ddd, #999)
+}
+.story-title{
+    padding-top: 5%;
+    font-size: xx-large;
+}
+.story-sign{
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.story-gallery{
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+.story-gallery-1 img{
+    width: 311px;
+    height: 467px;
+    border-radius: 10px;
+    margin-left: 400px;
+}
+.story-gallery-2 img{
+    width: 311px;
+    height: 467px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.story-desc{
+    width: 467px;
+    height: 467px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 23%;
+    bottom: 10%;
+}
+.story-desc i{
+    font-size: xx-large;
+    color: #7A7A7A;
+}
+.desc-title1{
+    color: #cfa670;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    margin-top: 15%;
+}
+.desc-title2{
+    font-size: 60px;
+    margin-top: -5%;
+}
+.desc{
+    margin: 5% 10% 5% 10%;
+}
+.desc-extra button{
+    background: none;
+    border: none;
+    font-size: larger;
+    color: #cfa670;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+
+
+
+
+
+
+#menu{
+    background: linear-gradient(#999,#666);
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+    overflow: hidden;
+}
+.menu-title{
+    text-align:center;
+    padding-top: 100px;
+}
+.menu-title-1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.menu-title-2{
+    font-size: 35px;
+    color: white;
+}
+.menu-gallery{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: inherit;
+}
+.menu-gallery-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
+    width: 28%;
+}
+.menu-gallery-2{
+    height: 1000px;
+    width: 28%;
+    overflow: hidden;
+    border: solid 3px black;
+    border-radius: 30px;
+}
+.menu-picture{
+    height: 45%;
+    overflow: hidden;
+    border: solid 3px black;
+    border-radius: 30px;
+    background: black;
+    position: relative;
+    z-index: 0;
+}
+.food-item{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+.food-item:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+.food-item:hover + .food-desc{
+    bottom: 10%;
+    transition: all .3s ease;
+}
+.food-desc{
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease;
+    margin: 0 20px 0 20px;
+}
+.food-desc:hover{
+    bottom: 10%;
+    transition: all .3s ease;
+}
+.food-desc:hover + .food-item{
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+.food-desc-name{
+    color: #cfa670;
+    font-size: xx-large;
+}
+.food-desc-infor{
+    color: white;
+}
+.menu-gallery-2{
+    background: black;
+    position: relative;
+}
+.food-5{
+    transition: all .3s ease;
+}
+.food-5:hover{
+    transform: scale(1.2);
+    transition: all .3s ease;
+    opacity: 0.5;
+}
+.food-5:hover +.food-desc{
+    bottom: 5%;
+    transition: all .3s ease;
+}
+
+
+
+
+
+#map{
+    width: 100%; 
+}
+.map-title{
+    text-align: center;
+    background-image: url(./Sauce/img/background4.jpg);
+    padding: 100px 0 100px 0;
+}
+.map-head-1{
+    color: #cfa670;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+.map-head-2{
+    color: white;
+    font-size: 40px;
+}
+.map-main{
+    background: #ddd;
+    position: relative;
+    padding-bottom: 150px;
+}
+.location{
+    width: 45%;
+    height: 500px;
+    margin: 8% 15%;   
+}
+.map-branch{
+    width: 500px;
+    height: 500px;
+    background-color: #332b25;
+    position: absolute;
+    top: 20%;
+    right: 17%;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+.branch-title-1{
+    color: #cfa670;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-top: 15%;
+}
+.branch-title-2{
+    font-size: 50px;
+    margin-top: -20px;
+}
+.map-branch i{
+    color: #cfa670;
+    font-size: x-large;
+    margin-top: 10px;
+}
+.branch-address{
+    margin: 20px 100px 0 100px;
+}
+.branch-number{
+    font-size: larger;
+    margin-top: 25px;
+}
+.map-information{
+    display: flex;
+    justify-content: center;
+}
+.map-contact{
+    width: 30%;
+}
+.map-contact-tel{
+    margin-top: 20px;
+}
+.map-open{
+    width: 40%;
+}
+.map-open-title{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.open-time{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0%;
+}
+.open-time div{
+    width: 50%;
+}
+
+
+
+
+
+#review{
+    width: 100%;
+    height: 1000px;
+    background: url(./Sauce/img/background3.jpg) no-repeat;
+}
+.review-title{
+    text-align: center;
+    padding-top: 100px;
+}
+.review-head{
+    font-size: 60px;
+    color: #cfa670;
+    font-family: 'Dancing Script', cursive;
+}
+.review-desc{
+    font-size: xx-large;
+    color: white;
+}
+.carousel{
+    background-color: white;
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 30px 50px 0 50px;
+    display: flex;
+}
+.picture{
+    width: 25%;
+    height: 25%;
+    border-radius: 100%;
+    margin-left: 37.5%;
+}
+.comment p{
+    padding: 5%;
+    font-size: larger;
+}
+.name p{
+    font-size: xx-large;
+    margin-top: 10px;
+    color: #cfa670;
+}
+.occupation p{
+    font-size: x-large;
+    padding-bottom: 15%;
+    color: #cfa670;
+}
+.review-button{
+    margin-top: 50px;
+    margin-left: 43%;
+    border: none;
+    border-radius: 20px;
+    font-size: x-large;
+    width: 14%;
+    height: 5%;
+    color: #cfa670;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.review-button:hover{
+    color: white;
+    background-color: #cfa670;
+    transition: all .3s ease;
+}
+
+
+#footer{
+    height: auto;
+    background-color: #332B25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#footer div{
+    width: 20%;
+}
+.footer-name-title{
+    width: 120px;
+    height: 40px;
+}
+.footer-name p{
+    color: #7A7A7A;
+    font-size: 16px;
+}
+.footer-overview{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+.overview-title{
+    font-size: 20px;
+}
+.overview-hover{
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+}
+.overview-hover:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}
+.overview-hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.overview-hover:hover::after{
+    left: 0;
+    width: 23%;
+    transition: all .3s ease;
+}
+.footer-overview ul{
+    list-style: none;
+}
+.footer-overview li{
+    margin: 10px 0 10px 0;
+}
+.footer-contact{
+    color: white;
+    width: 22%;
+}
+.contact-info{
+    display: inline-block;
+    font-size: 20px;
+}
+.footer-contact i{
+    font-size: 25px;
+    display: inline;
+    text-decoration: none;
+}
+.contact-list p{
+    font-family: Poppins;
+    text-decoration: none;
+    display: inline;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.icon{
+    margin: 10px 0 10px 0;
+}
+.footer-social{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    margin-bottom: 6%;
+}
+.footer-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 20px;
+    transition: all .3s ease;
+}
+.footer-social a:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}

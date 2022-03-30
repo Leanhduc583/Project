@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box; 
+    /* font-family: Poppins; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Poppins;
+    position: relative
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+#head{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: #332B25;
+    opacity: 0.9;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+}
+
+.logo{
+    height: 34px;
+    width: 101px;
+    margin-top: 20%;
+    margin-left: 300%;
+    cursor: pointer;
+}
+.header-menu{
+    width: 65%;
+}
+.header-menu-wrap{
+    margin-top: 24px;
+    margin-left: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: large;
+}
+.header-menu-item{
+    position: relative;
+    transition: all .3s ease;
+}
+.header-menu-item:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.header-menu-item:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.header-menu-item:hover::after{
+    width: 100%;
+    transition: all .3s ease;
+    left: 0;
+}
+.menu-reservation{
+    width: 200px;
+    height: 50px;
+}
+button.reservation{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 70%;
+    margin-top: 11px;
+    margin-left: 30px;
+    background-color: inherit;
+    color: white;
+    font-size: large;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-family: Poppins;
+}
+button.reservation:hover{
+    background-color: #cfa670;
+    border: 2px solid #cfa670;
+    transition: all .3s ease;
+}
+
+
+
+
+
+#intro{
+    background: url(./Sauce/img/background5.jpg) fixed;
+    height: 1000px;
+    margin: 0%;
+}
+.intro-text{
+    padding-left: 10%;
+    font-size: x-large;
+    color: white;
+}
+.intro-title{
+    padding-top: 20%;
+    font-family: 'Dancing Script', cursive;
+    color: #cfa670;
+    font-size: 80px;
+    margin: 0;
+}
+
+
+
+
+
+#reservation{
+    padding: 20px 0 80px 0;
+    background: #aaa;
+}
+.reservation-title{
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+#form-reservation{
+    width: 50%;
+    margin-left: 25%;
+    background-color: black;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.form-infor{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    border-bottom: #cfa670 solid 2px;
+}
+#date{
+    width: 30%;
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+    border-bottom: #cfa670 solid 2px;
+}
+#form-submit{
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: x-large;
+    transition: all .3s ease;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: black
+}
+#form-submit:hover{
+    background-color: #cfa670;
+    color: white;
+    transition: all .3s ease;
+}
+label{
+    display: block;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+select{
+    display: block;
+    margin-left: 15%;
+    width: 20%;
+    height: 50px;
+    background-color: transparent;
+    color: #cfa670;
+    border: none;
+    border-bottom: #cfa670 solid 2px;
+    text-align: center;
+    font-size: larger;
+}
+input{
+    display: block;
+    margin-left: 15%;
+    outline: none; 
+    color: #cfa670;
+    height: 50px;
+}
+input::placeholder{
+    color: #cfa670;
+    font-size: larger;
+}
+input:focus{
+    border-bottom: #cfa670 solid 2px;
+}
+
+
+
+#thanks{
+    background: url(./Sauce/img/background4.jpg) fixed;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.thanks-title{
+    width: 60%;
+    background-color: #cfa670;
+    margin-left: 20%;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: x-large;
+}
+
+
+
+
+
+#footer{
+    height: auto;
+    background-color: #332B25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#footer div{
+    width: 20%;
+}
+.footer-name-title{
+    width: 120px;
+    height: 40px;
+}
+.footer-name p{
+    color: #7A7A7A;
+    font-size: 16px;
+}
+.footer-overview{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+.overview-title{
+    font-size: 20px;
+}
+.overview-hover{
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+}
+.overview-hover:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}
+.overview-hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.overview-hover:hover::after{
+    left: 0;
+    width: 23%;
+    transition: all .3s ease;
+}
+.footer-overview ul{
+    list-style: none;
+}
+.footer-overview li{
+    margin: 10px 0 10px 0;
+}
+.footer-contact{
+    color: white;
+    width: 22%;
+}
+.contact-info{
+    display: inline-block;
+    font-size: 20px;
+}
+.footer-contact i{
+    font-size: 25px;
+    display: inline;
+    text-decoration: none;
+}
+.contact-list p{
+    font-family: Poppins;
+    text-decoration: none;
+    display: inline;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.icon{
+    margin: 10px 0 10px 0;
+}
+.footer-social{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    margin-bottom: 6%;
+}
+.footer-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 20px;
+    transition: all .3s ease;
+}
+.footer-social a:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}

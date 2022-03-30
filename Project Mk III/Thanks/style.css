@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box; 
+    /* font-family: Poppins; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Poppins;
+    position: relative
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+#head{
+    top: 0;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: #332B25;
+    opacity: 0.9;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+}
+
+.logo{
+    height: 34px;
+    width: 101px;
+    margin-top: 20%;
+    margin-left: 300%;
+    cursor: pointer;
+}
+.header-menu{
+    width: 65%;
+}
+.header-menu-wrap{
+    margin-top: 24px;
+    margin-left: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: large;
+}
+.header-menu-item{
+    position: relative;
+    transition: all .3s ease;
+}
+.header-menu-item:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.header-menu-item:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.header-menu-item:hover::after{
+    width: 100%;
+    transition: all .3s ease;
+    left: 0;
+}
+.menu-reservation{
+    width: 200px;
+    height: 50px;
+}
+button.reservation{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 70%;
+    margin-top: 11px;
+    margin-left: 30px;
+    background-color: inherit;
+    color: white;
+    font-size: large;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-family: Poppins;
+}
+button.reservation:hover{
+    background-color: #cfa670;
+    border: 2px solid #cfa670;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+#intro{
+    background-color: #333;
+    color: white;
+    width: 100%;
+    height: 300%;
+    z-index: 0;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 250px;  
+}
+#intro h1{
+    color: #cfa670;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+#intro p {
+    font-size: x-large;
+    margin-bottom: 100px;
+    margin-top: 0;
+}
+#intro a{
+    color: white;
+    text-decoration: none;
+    background-color: #cfa670;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+#intro a:hover{
+    transition: all .3s ease;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+#result{
+    background-color: #333;
+    border-top: #cfa670 solid 2px;
+    padding: 0 5% 2% 5%;
+}
+#receipt-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.receipt{
+    width: 30%;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+.bill{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+#footer{
+    height: auto;
+    background-color: #332B25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#footer div{
+    width: 20%;
+}
+.footer-name-title{
+    width: 120px;
+    height: 40px;
+}
+.footer-name p{
+    color: #7A7A7A;
+    font-size: 16px;
+}
+.footer-overview{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+.overview-title{
+    font-size: 20px;
+}
+.overview-hover{
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+}
+.overview-hover:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}
+.overview-hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfa670;
+    transition: all .3s ease; 
+}
+.overview-hover:hover::after{
+    left: 0;
+    width: 23%;
+    transition: all .3s ease;
+}
+.footer-overview ul{
+    list-style: none;
+}
+.footer-overview li{
+    margin: 10px 0 10px 0;
+}
+.footer-contact{
+    color: white;
+    width: 22%;
+}
+.contact-info{
+    display: inline-block;
+    font-size: 20px;
+}
+.footer-contact i{
+    font-size: 25px;
+    display: inline;
+    text-decoration: none;
+}
+.contact-list p{
+    font-family: Poppins;
+    text-decoration: none;
+    display: inline;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.icon{
+    margin: 10px 0 10px 0;
+}
+.footer-social{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    margin-bottom: 6%;
+}
+.footer-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 20px;
+    transition: all .3s ease;
+}
+.footer-social a:hover{
+    color: #cfa670;
+    transition: all .3s ease;
+}
+
+
+
+
